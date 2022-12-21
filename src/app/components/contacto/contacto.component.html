@@ -1,0 +1,65 @@
+<section id="contacto" class="contacto">
+  <h2 class="contacto__title">Contáctame</h2>
+  <div class="contacto__content">
+    <div class="contact__cardList">
+      <ul class="contact__lista">
+        <li>
+          <article class="contacto_card">
+            <img class="contacto_cardImage" src="./assets/icons/mail_outline.svg" alt="mail icon" />
+            <p class="contacto_cardText">Correo</p>
+            <a class="contacto_cardValue" href="mailto:shanthal@gmail.com">shanthal@gmail.com</a>
+          </article>
+        </li>
+        <li>
+          <article class="contacto_card">
+            <img
+              class="contacto_cardImage"
+              src="./assets/icons/phonelink_ring.svg"
+              alt="phone icon" />
+            <p class="contacto_cardText">Teléfono</p>
+            <a class="contacto_cardValue" href="tel:+51958696589">+51 958 696 589</a>
+          </article>
+        </li>
+      </ul>
+    </div>
+    <form id="contact__form" class="contact__form" novalidate>
+      <div class="form__control">
+        <label for="txtNombre">Nombre:</label>
+        <input
+          autocomplete="off"
+          type="text"
+          id="txtNombre"
+          name="nombre"
+          placeholder="Su nombre" />
+        <div id="nombre__error" class="error__mesage--false">Por favo ingrese su nombre.</div>
+      </div>
+      <div class="form__control">
+        <label for="txtCorreo">Correo:</label>
+        <input
+          autocomplete="off"
+          type="email"
+          id="txtCorreo"
+          name="correo"
+          placeholder="Su correo" />
+        <div id="correo__error" class="error__mesage--false">
+          Por favo ingrese un correo válido.
+        </div>
+      </div>
+      <div class="form__control">
+        <label for="txtMensaje">Mensaje:</label>
+        <textarea
+          autocomplete="off"
+          name="mensaje"
+          id="txtMensaje"
+          cols="30"
+          rows="5"
+          placeholder="Su mensaje"></textarea>
+        <div id="mensaje__error" class="error__mesage--false">Por favo ingrese su mensaje.</div>
+      </div>
+      <button type="submit">
+        <img src="./assets/icons/send.svg" alt="send icon" />
+        <span>Enviar Mensaje</span>
+      </button>
+    </form>
+  </div>
+</section>
